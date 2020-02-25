@@ -1,4 +1,4 @@
-import { NativeModules, ImageSourcePropType } from "react-native";
+import { NativeModules, ImageSourcePropType, ImageStyle } from "react-native";
 
 export interface RNFLCoverModes {
   ScaleToFill: number;
@@ -19,10 +19,10 @@ export const MODES = {
 };
 
 export interface FLAnimatedImageProps {
-  contentMode: number;
+  contentMode?: number;
   source: ImageSourcePropType;
-  src: string;
-  resizeMode: keyof typeof MODES;
-  onFrameChange: () => void;
-  onLoadEnd: () => void;
+  resizeMode?: keyof typeof MODES;
+  style?: ImageStyle;
+  onFrameChange?: () => void;
+  onLoadEnd?: () => void;
 }

@@ -9,7 +9,7 @@ class FLAnimatedImage extends Component<FLAnimatedImageProps> {
 
   render() {
     if (Platform.OS === "android") return <Image {...this.props} />;
-    const contentMode = MODES[this.props.resizeMode];
+    const contentMode = MODES[this.props.resizeMode || "contain"];
     const source = Image.resolveAssetSource(this.props.source) || {
       uri: undefined,
       width: undefined,
