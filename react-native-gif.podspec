@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/seavan/react-native-gif.git" }
   s.source_files  = "ios/**/*.{h,m}"
 
+  s.dependency 'React'
   s.dependency 'FLAnimatedImage'
 end
