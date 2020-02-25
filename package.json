@@ -1,0 +1,30 @@
+{
+  "name": "react-native-gif",
+  "version": "1.0.0",
+  "description": "FLAnimatedImage for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seavan/react-native-gif.git"
+  },
+  "keywords": [
+    "react-native",
+    "flanimatedimage",
+    "animated",
+    "image",
+    "gif"
+  ],
+  "author": "Samvel Avanesov (seavan@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seavan/react-native-gif"
+  },
+  "homepage": "https://github.com/seavan/react-native-gif",
+  "peerDependencies": {
+    "react-native": "*",
+    "prop-types": "*"
+  }
+}
