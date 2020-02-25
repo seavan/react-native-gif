@@ -24,7 +24,16 @@
   },
   "homepage": "https://github.com/seavan/react-native-gif",
   "peerDependencies": {
-    "react-native": "*",
-    "prop-types": "*"
+    "prop-types": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.5",
+    "@types/react": "^16.9.23",
+    "@types/react-native": "^0.61.17",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5",
+    "tslib": "^1.11.0",
+    "typescript": "^3.8.2"
   }
 }
