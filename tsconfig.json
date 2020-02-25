@@ -9,12 +9,10 @@
   ],
   "exclude": [
     "./(prettier|jest|)*.js",
-    "./*.ts",
     "**/webpack.config.js",
     "**/dist/**/*",
     "coverage/**/*",
     "./e2e/**",
-    "wdio.conf.js"
   ],
   "compilerOptions": {
     "baseUrl": ".",

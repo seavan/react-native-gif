@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, requireNativeComponent } from "react-native";
+import { Platform, Image, requireNativeComponent } from "react-native";
 import { FLAnimatedImageProps, MODES } from "./typedefs";
 
 class FLAnimatedImage extends Component<FLAnimatedImageProps> {
@@ -8,6 +8,7 @@ class FLAnimatedImage extends Component<FLAnimatedImageProps> {
   };
 
   render() {
+    if (Platform.OS === "android") return <Image {...this.props} />;
     const contentMode = MODES[this.props.resizeMode];
     const source = Image.resolveAssetSource(this.props.source) || {
       uri: undefined,
