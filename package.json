@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/seavan/react-native-gif",
   "peerDependencies": {
-    "prop-types": "*",
     "react-native": "*"
   },
   "devDependencies": {
